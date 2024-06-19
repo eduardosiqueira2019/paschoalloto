@@ -1,0 +1,14 @@
+-- public.cep_endereco definition
+
+-- Drop table
+
+-- DROP TABLE cep_endereco;
+
+CREATE TABLE cep_endereco (
+	cep varchar(8) NOT NULL,
+	logradouro varchar(255) NULL,
+	bairro varchar(60) NULL,
+	cidade varchar(60) NULL,
+	uf varchar(2) NULL,
+	CONSTRAINT cep_endereco_pk PRIMARY KEY (cep)
+);
